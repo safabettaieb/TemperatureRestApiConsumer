@@ -20,5 +20,9 @@ public class TestConsumerTemperatureService {
 	public TemperatureResponse testConsumeMin(@RequestBody TemperatureRequest request) {
 		return service.consumeMin(request);
 	}
+	@PostMapping("/max")
+	public TemperatureResponse testConsumeMax(@RequestBody TemperatureRequest request) {
+		return service.consumeMax(request);
+	}
 
 }

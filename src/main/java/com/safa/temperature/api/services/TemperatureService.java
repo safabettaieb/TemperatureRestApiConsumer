@@ -25,5 +25,9 @@ public class TemperatureService {
 		return response;	
 		
 	}
-
+	public TemperatureResponse consumeAvg(TemperatureRequest request) {
+		TemperatureResponse response = restTemplate.postForObject(URL+"/avg", request, TemperatureResponse.class);
+		return response;	
+		
+	}
 }
