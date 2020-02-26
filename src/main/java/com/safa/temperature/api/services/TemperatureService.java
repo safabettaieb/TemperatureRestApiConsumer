@@ -20,4 +20,10 @@ public class TemperatureService {
 		return response;	
 		
 	}
+	public TemperatureResponse consumeMax(TemperatureRequest request) {
+		TemperatureResponse response = restTemplate.postForObject(URL+"/max", request, TemperatureResponse.class);
+		return response;	
+		
+	}
+
 }
