@@ -28,4 +28,8 @@ public class TestConsumerTemperatureService {
 	public TemperatureResponse testConsumeAvg(@RequestBody TemperatureRequest request) {
 		return service.consumeAvg(request);
 	}
+	@PostMapping("/closestToZero")
+	public TemperatureResponse testConsumeClosestToZero(@RequestBody TemperatureRequest request) {
+		return service.consumeclosestToZero(request);
+	}
 }

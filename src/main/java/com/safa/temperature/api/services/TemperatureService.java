@@ -31,7 +31,7 @@ public class TemperatureService {
 		
 	}
 	public TemperatureResponse consumeclosestToZero(TemperatureRequest request) {
-		TemperatureResponse response = restTemplate.postForObject(URL+"/closestToZero", request, TemperatureResponse.class);
+		TemperatureResponse response = restTemplate.postForObject(URL+"/closest-to-zero", request, TemperatureResponse.class);
 		return response;	
 		
 	}
