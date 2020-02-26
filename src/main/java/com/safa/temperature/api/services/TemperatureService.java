@@ -17,8 +17,7 @@ public class TemperatureService {
 	
 	public TemperatureResponse consumeMin(TemperatureRequest request) {
 		TemperatureResponse response = restTemplate.postForObject(URL+"/min", request, TemperatureResponse.class);
-		return response;
-		
+		return response;	
 		
 	}
 }
