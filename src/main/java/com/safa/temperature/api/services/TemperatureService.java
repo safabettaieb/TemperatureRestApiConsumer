@@ -30,4 +30,9 @@ public class TemperatureService {
 		return response;	
 		
 	}
+	public TemperatureResponse consumeclosestToZero(TemperatureRequest request) {
+		TemperatureResponse response = restTemplate.postForObject(URL+"/closestToZero", request, TemperatureResponse.class);
+		return response;	
+		
+	}
 }
